@@ -1,0 +1,52 @@
+{
+  "$name$": "English",
+
+  "indexTitle": "PureLauncher | Home",
+  "headText": "An awesome Minecraft launcher.",
+  "download": "DOWNLOAD",
+  "allVersions": "ALL VERSIONS",
+
+  "resourcesSystem": "Convenient Resource System",
+  "resourcesSystem1": "One click installation of  versiosn, mods, resource-packs and saves.",
+  "resourcesSystem2": "One click installation of vanilla games, Fabric, Forge and Optifine.",
+  "resourcesSystem3": "One click add Minecraft third-party server.",
+  "resourcesSystem4": "Update the above resources automatically.",
+  "resourcesSystem5": "Easily export and manage the above resources.",
+  "openVersionsList": "View resources list",
+
+  "accountSystem": "Advanced Account System",
+  "accountSystem1": "Support online login and offline login.",
+  "accountSystem2": "Support for skin changing in the launcher.",
+  "accountSystem3": "Support Authlib-Injector (plugin).",
+
+  "pluginSystem": "Powerful plug-in system",
+  "pluginSystem1": "One click installation and automatic update plugins.",
+  "pluginSystem2": "Easy to customize launcher user interface and add features.",
+  "pluginSystem3": "Easy to modify launch command parameters and add authenticator.",
+  "pluginSystem4": "Can intercept and modify the socket packet of games.",
+  "pluginSystem5": "Customizable resolving and installation resources.",
+  "pluginSystem6": "Create exclusive functions for the third-party server.",
+  "openPluginsList": "View official plugin list",
+
+  "advantages": "And more...",
+  "advantages1": "Beautiful user interface and exquisite dynamic effect.",
+  "advantages2": "Easy to operate and user-friendly.",
+  "advantages3": "Multilingual support.",
+  "advantages4": "Third-party minecraft servers can have their own pages.",
+  "advantages5": "Automatically install Java and select the best memory.",
+  "advantages6": "Optional version isolation.",
+  "advantages7": "Proxies can be used.",
+  "advantages8": "Multiple download source support (such as BMCLAPI and MCBBSAPI)",
+
+  "openSource": "Open source, just to get better",
+  "openSourceLink": "PureLauncher uses MIT license to\nhost the core, official website, official plugins and build process in GitHub completely\nto obtain the source code, please click the button below:",
+  "hopeHelp": "we also welcome you to submit feedback and pull requests.\nYour help will make PureLauncher mature!",
+
+  "contact": "Get help?",
+  "qqGroup": "Tencent QQ Group",
+  "telegramGroup": "Telegram Group",
+  "clickToEnter": "Click to enter",
+
+
+  "versionsTitle": "PureLauncher | Versions Download"
+}

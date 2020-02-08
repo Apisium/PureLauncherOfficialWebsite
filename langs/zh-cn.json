@@ -1,0 +1,52 @@
+{
+  "$name$": "简体中文",
+
+  "indexTitle": "PureLauncher | 主页",
+  "download": "立即下载",
+  "allVersions": "查看所有版本",
+  "headText": "一款简约而不简单的 Minecraft 启动器.",
+
+  "resourcesSystem": "便捷的资源系统",
+  "resourcesSystem1": "一键安装整合包、模组、资源包和地图",
+  "resourcesSystem2": "一键安装原版游戏、Fabric、Forge 和 Optifine",
+  "resourcesSystem3": "一键添加第三方 Minecraft 服务器",
+  "resourcesSystem4": "自动更新以上资源",
+  "resourcesSystem5": "轻松导出和管理以上资源",
+  "openVersionsList": "查看资源列表",
+
+  "accountSystem": "高级的账户系统",
+  "accountSystem1": "支持正版登陆和离线登陆",
+  "accountSystem2": "支持在启动器内更换皮肤",
+  "accountSystem3": "支持 Authlib-Injector (通过插件)",
+
+  "pluginSystem": "强大的插件系统",
+  "pluginSystem1": "一键安装和自动更新插件",
+  "pluginSystem2": "可轻松地自定义启动器界面和添加功能",
+  "pluginSystem3": "可容易地修改启动参数和添加登陆模式",
+  "pluginSystem4": "可对游戏封包进行拦截和修改",
+  "pluginSystem5": "可自定义解析和安装资源",
+  "pluginSystem6": "可为服务器打造专属功能",
+  "openPluginsList": "查看官方插件列表",
+
+  "advantages": "还有更多...",
+  "advantages1": "漂亮的界面和精美的动效",
+  "advantages2": "第三方 Minecraft 服务器可拥有专属的页面",
+  "advantages3": "操作简单, 专为玩家设计",
+  "advantages4": "支持多语言",
+  "advantages5": "自动安装 Java 和选择最适内存",
+  "advantages6": "可选择是否开启版本隔离",
+  "advantages7": "可使用网络代理",
+  "advantages8": "多下载源支持 (如 BMCLAPI 和 MCBBSAPI)",
+
+  "openSource": "开源, 只是为了变得更好",
+  "openSourceLink": "PureLauncher 使用自由的 MIT 协议\n将启动器本体、官网、官方插件和构建流程完整托管于 Github\n如需获取源码请点击下方按钮进入:",
+  "hopeHelp": "同时我们也欢迎您提交反馈和代码\n您的帮助将会让 PureLauncher 走向成熟!",
+
+  "contact": "获取帮助?",
+  "qqGroup": "QQ 群",
+  "telegramGroup": "Telegram 群组",
+  "clickToEnter": "点击进入",
+
+
+  "versionsTitle": "PureLauncher | 版本下载"
+}

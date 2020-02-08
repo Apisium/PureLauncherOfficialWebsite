@@ -1,0 +1,135 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+main > section {
+  scroll-snap-align: start;
+}
+
+body {
+  background-color: #f8f5f4;
+}
+
+.screenshot {
+  filter: drop-shadow(1px 4px 6px #00000087);
+}
+
+ul {
+  padding: 0 0 0 20px;
+}
+
+.img {
+  display: inline-block;
+  .screenshot { width: 100% }
+}
+
+.container {
+  vertical-align: top\9;
+  vertical-align: top\0;
+  display: inline-block;
+}
+
+img {
+  border: none;
+}
+
+#first {
+  width: 100%;
+  color: white;
+  padding: 140px 0;
+  max-height: 100vh;
+  background-attachment: fixed;
+  text-shadow: 2px 2px 5px #000000c2;
+  text-align: center\9;
+  text-align: center\0;
+  background-image: url(../assets/bg-snow.png);
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  h3 {
+    font-weight: normal;
+    margin: 0;
+  }
+  .container {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+#second {
+  color: white;
+  padding: 120px 0 160px;
+  text-align: center\9;
+  text-align: center\0;
+  background-image: url(../assets/bg-wool-dark.png);
+  box-shadow: 0 -5px 6px -3px rgba(0, 0, 0, 0.2), 0 -9px 12px 1px rgba(0, 0, 0, 0.14),
+    0 -3px 16px 2px rgba(0, 0, 0, 0.12);
+  section {
+    margin-bottom: 80px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 0;
+  }
+}
+
+.right {
+  text-align: right;
+  ul { direction: rtl }
+}
+.and-more {
+  margin: -40px 0 !important;
+  text-align: center;
+  div {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+#third {
+  text-align: center;
+  padding: 120px 0;
+  background-image: url(../assets/trans-top-darkwool.png),
+    url(../assets/trans-bottom-darkwool.png), url(../assets/bg-wool-white.png);
+  background-position: center top, center bottom, top;
+  background-repeat: repeat-x, repeat-x, repeat;
+  p { white-space: pre-wrap }
+}
+
+.dark-wool {
+  width: 100%;
+  height: 130px;
+  background-image: url(../assets/bg-wool-dark.png);
+}
+
+#fourth {
+  color: #313131;
+  text-align: center;
+  margin: 0 !important;
+  padding: 20px 0 80px;
+  p { white-space: pre-wrap }
+}
+
+a[role=link] {
+  color: #288123;
+}
+
+@media screen and (max-width: 768px) {
+  #first {
+    text-align: center;
+    padding: 140px 20px;
+    display: block !important;
+  }
+
+  #second {
+    .right {
+      text-align: left;
+      ul { direction: ltr }
+    }
+  }
+}

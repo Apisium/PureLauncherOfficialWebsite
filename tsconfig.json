@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "strictNullChecks": false,
+    "noEmit": true,
+    "declaration": true,
+    "jsx": "react",
+    "lib": ["webworker", "scripthost", "dom", "es2019"]
+  }
+}

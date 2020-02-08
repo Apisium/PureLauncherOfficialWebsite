@@ -1,0 +1,80 @@
+body {
+  background-image: url(../assets/bg-snow.png);
+}
+
+main {
+  margin: 140px
+}
+
+#book-body {
+  padding: 0 8%;
+  display: block;
+  overflow: hidden;
+  background: url(../assets/book-body.png) repeat-y;
+}
+
+#book-header {
+  width: 100%;
+  margin-top: 2.2rem;
+  padding-bottom: 8.11%;
+  background: url(../assets/book-header.png) no-repeat;
+}
+
+#book-footer {
+  width: 100%;
+  padding-bottom: 14.38%;
+  background: url(../assets/book-footer.png) no-repeat;
+}
+
+#book-body,
+#book-header,
+#book-footer {
+  background-size: 100%;
+  image-rendering: pixelated;
+}
+
+.shake:hover {
+  animation: shake 5s ease-in-out infinite;
+}
+.right {
+  float: right;
+}
+
+ul {
+  color: rgba(0, 0, 0, 0.84);
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  padding: 0.4rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color .3s;
+}
+li:hover {
+  color: #36b030;
+}
+p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+li + li {
+  border-top: 1px solid #CFB78E;
+}
+header .right > span {
+  float: left;
+  margin-right: 0.8rem;
+}
+header > div {
+  display: inline-block;
+}
+
+#list-header {
+  cursor: default;
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.84) !important;
+}
