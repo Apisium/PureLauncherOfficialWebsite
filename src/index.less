@@ -115,8 +115,14 @@ img {
   p { white-space: pre-wrap }
 }
 
-a[role=link] {
+a:not([role=button]) {
   color: #288123;
+}
+
+#release-type {
+  margin: 6px;
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 768px) {

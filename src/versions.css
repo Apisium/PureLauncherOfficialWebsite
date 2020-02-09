@@ -7,43 +7,18 @@ main {
 }
 
 #book-body {
-  padding: 0 8%;
-  display: block;
-  overflow: hidden;
-  background: url(../assets/book-body.png) repeat-y;
+  text-align: left;
 }
 
-#book-header {
-  width: 100%;
-  margin-top: 2.2rem;
-  padding-bottom: 8.11%;
-  background: url(../assets/book-header.png) no-repeat;
-}
-
-#book-footer {
-  width: 100%;
-  padding-bottom: 14.38%;
-  background: url(../assets/book-footer.png) no-repeat;
-}
-
-#book-body,
-#book-header,
-#book-footer {
-  background-size: 100%;
-  image-rendering: pixelated;
-}
-
-.shake:hover {
-  animation: shake 5s ease-in-out infinite;
-}
 .right {
   float: right;
 }
 
 ul {
   color: rgba(0, 0, 0, 0.84);
-  margin: 0;
   list-style-type: none;
+  padding: 0 40px;
+  margin: 0;
 }
 li {
   padding: 0.4rem 0;
@@ -76,5 +51,12 @@ header > div {
   font-weight: 400;
   text-align: center;
   font-size: 0.9rem;
+  white-space: pre-wrap;
   color: rgba(0, 0, 0, 0.84) !important;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 140px 10px 60px;
+  }
 }

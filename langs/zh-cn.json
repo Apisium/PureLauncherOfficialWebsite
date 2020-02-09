@@ -4,6 +4,7 @@
   "indexTitle": "PureLauncher | 主页",
   "download": "立即下载",
   "allVersions": "查看所有版本",
+  "notSupport": "当前系统不支持运行 PureLauncher",
   "headText": "一款简约而不简单的 Minecraft 启动器.",
 
   "resourcesSystem": "便捷的资源系统",
@@ -48,5 +49,27 @@
   "clickToEnter": "点击进入",
 
 
-  "versionsTitle": "PureLauncher | 版本下载"
+  "versionsTitle": "PureLauncher | 版本下载",
+  "releaseVersion": "稳定版",
+  "snapshotVersion": "快照版",
+  "oldVersion": "远古版",
+  "releaseTime": "发布时间",
+  "versionsTopText": "安装某个版本请直接点击版本号即可, 若需安装额外的API (如 Forge 和 Fabric)\n请点击版本号旁类似右侧的按钮",
+
+
+  "installTitle": "PureLauncher | 资源安装",
+  "loading": "加载中...",
+  "installSuccess": "操作成功! 请查看启动器!",
+  "installFailed": "操作失败! 请确保已经安装 PureLauncher!",
+
+
+  "releaseTitle": "PureLauncher | 下载",
+  "32": "32位",
+  "64": "64位",
+
+
+  "pluginsTitle": "PureLauncher | 插件列表",
+  "multiInstances": "游戏多开",
+  "multiInstancesDesc": "这个插件可以让你同时开启多个游戏实例",
+  "install": "立即安装"
 }

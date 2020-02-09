@@ -21,21 +21,22 @@
   <meta name="msapplication-TileColor" content="#181818">
   <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blueprint-css@3.1.1/dist/blueprint.min.css" />
   <link type="text/css" rel="styleSheet" href="src/main.css" />
-  <link type="text/css" rel="styleSheet" href="src/minecraft.less" />
   <link type="text/css" rel="styleSheet" href="src/index.less" />
 </head>
 <body>
   <main>
+    <a href="i.html" style="display:none"></a>
     <header>
-      <img class="logo" src="assets/logo.png">
+      <a href="/"><img alt="logo" class="logo" src="assets/logo.png"></a>
     </header>
     <section id="first" bp="grid vertical-center">
       <div class="container" bp="12 offset-2 4@md offset-2@md">
         <h1>PureLauncher</h1>
         <h3 data-t="headText"></h3>
         <div class="buttons">
-          <a class="btn btn-primary" data-t="download"></a><a class="btn btn-secondary" data-t="allVersions"></a>
+          <button id="download-now" role="button" class="btn btn-primary" data-t="download"></button><a role="button" class="btn btn-secondary" href="release.html" data-t="allVersions"></a>
         </div>
+        <p id="release-type"></p>
       </div>
       <div bp="6@md 10 offset-2" class="img"><img class="screenshot" src="assets/screenshots/home.png"></div>
     </section>
@@ -51,7 +52,7 @@
             <li data-t="resourcesSystem4"></li>
             <li data-t="resourcesSystem5"></li>
           </ul>
-          <a class="btn btn-primary" data-t="openVersionsList" href="./versions.html"></a>
+          <a role="button" class="btn btn-primary" data-t="openVersionsList" href="./versions.html"></a>
         </div>
       </section>
       <section bp="grid vertical-center">
@@ -76,7 +77,7 @@
             <li data-t="pluginSystem4"></li>
             <li data-t="pluginSystem5"></li>
           </ul>
-          <a class="btn btn-primary" data-t="openPluginsList"></a>
+          <a role="button" class="btn btn-primary" data-t="openPluginsList" href="plugins.html"></a>
         </div>
       </section>
       <section class="and-more">
@@ -103,7 +104,7 @@
         <a href="https://codebeat.co/projects/github-com-apisium-purelauncher-master" target="_blank"><img alt="CodeBeat" src="https://codebeat.co/badges/2afd1913-119b-4b47-acb8-dbac54259a4e"></a>
         <a href="https://standardjs.com" target="_blank"><img alt="JavaScript Style Guide" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"></a>
         <p data-t="openSourceLink"></p>
-        <a class="btn btn-primary" href="https://github.com/Apisium/PureLauncher" target="_blank">Github</a>
+        <a role="button" class="btn btn-primary" href="https://github.com/Apisium/PureLauncher" target="_blank">Github</a>
         <p data-t="hopeHelp"></p>
       </div>
     </section>
@@ -112,10 +113,10 @@
       <div>
         <h1 data-t="contact"></h1>
         <ul>
-          <li><a role="link" href="https://github.com/Apisium/PureLauncher/issues">Github Issues</a></li>
-          <li><span data-t="qqGroup"></span>: <a role="link" href="https://jq.qq.com/?_wv=1027&k=59nPcrl">7923302</a></li>
-          <li><span data-t="telegramGroup"></span>: <a role="link" href="https://t.me/PureLauncher">@PureLauncher</a></li>
-          <li><span>MCBBS</span>: <a role="link" href="https://t.me/PureLauncher" data-t="clickToEnter"></a></li>
+          <li><a href="https://github.com/Apisium/PureLauncher/issues">Github Issues</a></li>
+          <li><span data-t="qqGroup"></span>: <a href="https://jq.qq.com/?_wv=1027&k=59nPcrl">7923302</a></li>
+          <li><span data-t="telegramGroup"></span>: <a href="https://t.me/PureLauncher">@PureLauncher</a></li>
+          <li><span>MCBBS</span>: <a href="https://t.me/PureLauncher" data-t="clickToEnter"></a></li>
         </ul>
       </div>
     </section>
@@ -130,7 +131,9 @@
       <span class="copy">Copyright &copy; 2020 Apisium All rights reserved.</span>
     </footer>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="src/i18n.ts"></script>
+  <script src="src/index.ts"></script>
 </body>
 </html>

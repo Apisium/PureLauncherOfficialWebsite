@@ -220,6 +220,12 @@ option, select {
   padding: 1.35rem 3.1rem
 }
 
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
 .btn-danger,.btn-hexagon,.btn-primary,.btn-secondary {
   text-shadow: 0 2px 0 rgba(0,0,0,.25);
 }
@@ -314,4 +320,32 @@ option, select {
 
 .btn:disabled::before {
   background-color: inherit;
+}
+
+#book-body {
+  padding: 0 8%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  background: url(../assets/book-body.png) repeat-y;
+}
+
+#book-header {
+  width: 100%;
+  margin-top: 2.2rem;
+  padding-bottom: 8.11%;
+  background: url(../assets/book-header.png) no-repeat;
+}
+
+#book-footer {
+  width: 100%;
+  padding-bottom: 14.38%;
+  background: url(../assets/book-footer.png) no-repeat;
+}
+
+#book-body,
+#book-header,
+#book-footer {
+  background-size: 100%;
+  image-rendering: pixelated;
 }

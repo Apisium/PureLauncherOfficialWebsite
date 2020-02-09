@@ -4,6 +4,7 @@
   "indexTitle": "PureLauncher | Home",
   "headText": "An awesome Minecraft launcher.",
   "download": "DOWNLOAD",
+  "notSupport": "The current system does not support PureLauncher!",
   "allVersions": "ALL VERSIONS",
 
   "resourcesSystem": "Convenient Resource System",
@@ -48,5 +49,27 @@
   "clickToEnter": "Click to enter",
 
 
-  "versionsTitle": "PureLauncher | Versions Download"
+  "versionsTitle": "PureLauncher | Versions Download",
+  "releaseVersion": "Release",
+  "snapshotVersion": "Snapshot",
+  "oldVersion": "Old",
+  "releaseTime": "Release Time",
+  "versionsTopText": "Please click the version id to install. If you need to install additional API (Such as Forge and Fabric)\nPlease click the button on the right next to the version id.",
+
+
+  "installTitle": "PureLauncher | Resources Install",
+  "loading": "Loading...",
+  "installSuccess": "Success! Please check the launcher!",
+  "installFailed": "Failed! Please make sure you have installed PureLauncher!",
+
+
+  "releaseTitle": "PureLauncher | Downloads",
+  "32": "x86",
+  "64": "x64",
+
+
+  "pluginsTitle": "PureLauncher | Plugins",
+  "multiInstances": "MultiInstances",
+  "multiInstancesDesc": "This plugin allows you to run multiple game instances.",
+  "install": "INSTALL"
 }

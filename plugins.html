@@ -9,7 +9,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <meta name="theme-color" content="#181818">
-  <title data-t="versionsTitle">PureLauncher | Versions Download</title>
+  <title data-t="pluginsTitle">PureLauncher | Plugins</title>
   <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
   <meta name="mobile-web-app-capable" content="yes">
   <!-- <link rel="icon" sizes="192x192" href="favicon.png"> -->
@@ -19,39 +19,24 @@
   <!-- <link rel="apple-touch-icon-precomposed" href="favicon.png"> -->
   <!-- <meta name="msapplication-TileImage" content="favicon.png"> -->
   <meta name="msapplication-TileColor" content="#181818">
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blueprint-css@3.1.1/dist/blueprint.min.css" />
   <link type="text/css" rel="styleSheet" href="src/main.css" />
-  <link type="text/css" rel="styleSheet" href="src/versions.css" />
+  <link type="text/css" rel="styleSheet" href="src/plugins.css" />
 </head>
 </head>
 <body>
   <header>
     <a href="/"><img alt="logo" class="logo" src="assets/logo.png"></a>
-    <div class="right">
-      <span>显示快照和远古版本</span>
-      <div class="switch">
-        <input role="switch" type="checkbox" id="old-versions" />
-        <div class="background"></div>
-        <div class="slot"></div>
-        <div class="thumb"></div>
-      </div>
-    </div>
-    <div class="right" style="margin-right:20px">
-      <span>拷贝模式</span>
-      <div class="switch">
-        <input role="switch" type="checkbox" id="copy-mode" />
-        <div class="background"></div>
-        <div class="slot"></div>
-        <div class="thumb"></div>
-      </div>
-    </div>
   </header>
   <main>
     <div id="book-header"></div>
-    <div id="book-body">
-      <div class="loading">
-        <div class='squares'><div></div><div></div><div></div><div></div></div>
-        <p data-t="loading"></p>
-      </div>
+    <div id="book-body" bp="grid 12 6@md vertical-center">
+      <section>
+        <img src="assets/screenshots/multi-instances.png">
+        <p data-t="multiInstances"></p>
+        <p class="description" data-t="multiInstancesDesc"></p>
+        <a role="button" class="btn btn-primary btn-sm" data-t="install"></a>
+      </section>
     </div>
     <div id="book-footer"></div>
   </main>
@@ -69,6 +54,5 @@
   <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="src/i18n.ts"></script>
-  <script src="src/versions.ts"></script>
 </body>
 </html>

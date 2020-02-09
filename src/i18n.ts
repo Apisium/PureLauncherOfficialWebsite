@@ -2,7 +2,8 @@ import enUS from '../langs/en-us.json'
 
 const langs: Record<string, typeof enUS> = require('../langs/*.json')
 
-const $i = (key: string): string => currentLang[key]
+const $i = (key: keyof typeof enUS): string => currentLang[key]
+window.$i = $i
 
 let currentLang: typeof enUS
 export const setLanguague = (l: string) => {
