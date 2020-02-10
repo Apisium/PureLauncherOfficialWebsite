@@ -35,4 +35,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Mirror to Gitee.
-        run: git remote add gh-pages ${{ secrets.GITEE_URL }} && git fetch ${{ secrets.GITEE_URL }} && git push -f ${{ secrets.GITEE_URL }} gh-pages
+        run: git remote add gitee ${{ secrets.GITEE_URL }} && git fetch gitee && git push -u -f gitee gh-pages
