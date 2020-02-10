@@ -24,9 +24,6 @@ jobs:
       - name: Build app
         run: yarn build
 
-      - name: Add Gitee remote url.
-        run: git remote set-url --add origin ${{ secrets.GITEE_URL }}
-
       - name: Deploy
         if: success()
         uses: crazy-max/ghaction-github-pages@v1
@@ -36,3 +33,6 @@ jobs:
           fqdn: pl.apisium.cn
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Mirror to Gitee.
+        run: git remote add gh-pages ${{ secrets.GITEE_URL }} && git fetch ${{ secrets.GITEE_URL }} && git push -f ${{ secrets.GITEE_URL }} gh-pages
