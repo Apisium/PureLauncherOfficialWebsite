@@ -35,9 +35,8 @@
   "advantages3": "操作简单, 专为玩家设计",
   "advantages4": "支持多语言",
   "advantages5": "自动安装 Java 和选择最适内存",
-  "advantages6": "可选择是否开启版本隔离",
-  "advantages7": "可使用网络代理",
-  "advantages8": "多下载源支持 (如 BMCLAPI 和 MCBBSAPI)",
+  "advantages6": "可使用网络代理",
+  "advantages7": "多下载源支持 (如 BMCLAPI 和 MCBBSAPI)",
 
   "openSource": "开源, 只是为了变得更好",
   "openSourceLink": "PureLauncher 使用自由的 MIT 协议\n将启动器本体、官网、官方插件和构建流程完整托管于 Github\n如需获取源码请点击下方按钮进入:",

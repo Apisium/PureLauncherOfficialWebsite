@@ -35,9 +35,8 @@
   "advantages3": "Multilingual support.",
   "advantages4": "Third-party minecraft servers can have their own pages.",
   "advantages5": "Automatically install Java and select the best memory.",
-  "advantages6": "Optional version isolation.",
-  "advantages7": "Proxies can be used.",
-  "advantages8": "Multiple download source support (such as BMCLAPI and MCBBSAPI)",
+  "advantages6": "Proxies can be used.",
+  "advantages7": "Multiple download source support (such as BMCLAPI and MCBBSAPI)",
 
   "openSource": "Open source, just to get better",
   "openSourceLink": "PureLauncher uses MIT license to\nhost the core, official website, official plugins and build process in GitHub completely\nto obtain the source code, please click the button below:",

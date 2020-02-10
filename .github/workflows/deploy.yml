@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out git repository
+        uses: actions/checkout@v1
+
+      - name: Install Node.js and yarn
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install dependencies
+        run: yarn install --production
+
+      - name: Build app
+        run: yarn build
+
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          build_dir: dist
+          committer_email: 764798966@qq.com
+          fqdn: pl.apisium.cn
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Mirror to Gitee.
+        run: git push -u ${{ secrets.GITEE_URL }} gh-pages -f
