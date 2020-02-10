@@ -51,6 +51,7 @@
     "parcel": "^1.12.4",
     "parcel-plugin-sw-precache": "^1.1.1",
     "pure-launcher": "https://github.com/Apisium/PureLauncher.git",
+    "tslib": "^1.10.0",
     "typescript": "^3.7.5"
   }
 }
