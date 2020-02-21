@@ -69,6 +69,8 @@
 
   "pluginsTitle": "PureLauncher | Plugins",
   "multiInstances": "MultiInstances",
+  "install": "INSTALL",
   "multiInstancesDesc": "This plugin allows you to run multiple game instances.",
-  "install": "INSTALL"
+  "authlibInjectorDesc": "This plugin allows you to use Authlib-Injector to login.",
+  "mcBotDesc": "This plugin allows you to create a bot that can chat and record in game."
 }

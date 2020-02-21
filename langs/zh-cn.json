@@ -68,7 +68,9 @@
 
 
   "pluginsTitle": "PureLauncher | 插件列表",
+  "install": "立即安装",
   "multiInstances": "游戏多开",
   "multiInstancesDesc": "这个插件可以让你同时开启多个游戏实例",
-  "install": "立即安装"
+  "authlibInjectorDesc": "这个插件可以让你使用Authlib-Injector来登陆游戏",
+  "mcBotDesc": "这个插件可以让你创建一个可以聊天、挂机和录制的机器人"
 }
