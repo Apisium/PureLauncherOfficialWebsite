@@ -35,10 +35,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload to server
-        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
-          ftp-server: ${{ secrets.SFTP_SERVER }}
-          ftp-username: ${{ secrets.SFTP_USERNAME }}
-          ftp-password: ${{ secrets.SFTP_PASSWORD }}
-          git-ftp-args: --insecure --remote-root /var/www/website
-          local-dir: dist
+          username: ${{ secrets.SFTP_USERNAME }}
+          server: ${{ secrets.SFTP_SERVER }}
+          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: './dist/*'
+          remote_path: '/var/www/website'
+          args: '-o ConnectTimeout=5'
