@@ -1,4 +1,4 @@
-# PureLauncherOfficialWebsite
+# PureLauncherOfficialWebsite ![Deploy](https://github.com/Apisium/PureLauncherOfficialWebsite/workflows/Deploy/badge.svg)
 
 ## Build
 

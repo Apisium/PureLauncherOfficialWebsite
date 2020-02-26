@@ -40,5 +40,5 @@ jobs:
           ftp-server: sftp://dl.pl.apisium.cn:22/
           ftp-username: ${{ secrets.SFTP_USERNAME }}
           ftp-password: ${{ secrets.SFTP_PASSWORD }}
-          git-ftp-args: --insecure --remote-root /var/www/website --delete
+          git-ftp-args: --insecure --remote-root /var/www/website
           local-dir: dist
