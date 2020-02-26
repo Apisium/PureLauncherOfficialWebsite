@@ -33,3 +33,12 @@ jobs:
           fqdn: pl.apisium.cn
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload to server
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        with:
+          ftp-server: sftp://dl.pl.apisium.cn:22/
+          ftp-username: ${{ secrets.SFTP_USERNAME }}
+          ftp-password: ${{ secrets.SFTP_PASSWORD }}
+          git-ftp-args: --insecure --remote-root /var/www/website --delete
+          local-dir: dist

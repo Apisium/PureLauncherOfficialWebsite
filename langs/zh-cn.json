@@ -47,6 +47,8 @@
   "telegramGroup": "Telegram 群组",
   "clickToEnter": "点击进入",
 
+  "serverProvider": "下载服务器提供",
+  "serverProviderText": "三线网路 | 流畅稳定 | 高频CPU | nvme固态 | 赠送无端口域名",
 
   "versionsTitle": "PureLauncher | 版本下载",
   "releaseVersion": "稳定版",

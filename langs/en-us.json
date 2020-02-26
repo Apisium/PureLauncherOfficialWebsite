@@ -47,6 +47,9 @@
   "telegramGroup": "Telegram Group",
   "clickToEnter": "Click to enter",
 
+  "serverProvider": "Server Provider",
+  "serverProviderText": "Smooth and stable | high frequency CPU | nvme SSD | free domain without port",
+
 
   "versionsTitle": "PureLauncher | Versions Download",
   "releaseVersion": "Release",
