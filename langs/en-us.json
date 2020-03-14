@@ -75,5 +75,8 @@
   "install": "INSTALL",
   "multiInstancesDesc": "This plugin allows you to run multiple game instances.",
   "authlibInjectorDesc": "This plugin allows you to use Authlib-Injector to login.",
-  "mcBotDesc": "This plugin allows you to create a bot that can chat and record in game."
+  "mcBotDesc": "This plugin allows you to create a bot that can chat and record in game.",
+  "curseForgeDesc": "This plugin allows you to install resources from CurseForge.",
+  "skins": "Skins",
+  "skinsDesc": "This plugin allows you to change PureLauncher's skin."
 }

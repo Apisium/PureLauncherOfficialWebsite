@@ -1,22 +1,12 @@
 import copy from 'copy-to-clipboard'
 
-interface ForgeFile {
-  md5: string
-  path: string
-}
-
-interface Forge {
-  version: string
-  universal: ForgeFile
-  installer: ForgeFile
-}
-
 interface Version {
   id: string
-  type: 'snapshot' | 'old_beta' | 'old_alpha' | 'release'
   time: number
   fabric?: string
-  forge?: Forge
+  forge?: string
+  optifine?: [string, string]
+  type?: 'snapshot' | 'old'
 }
 
 interface Data {
@@ -49,7 +39,7 @@ const genList = () => {
   const releaseTime = $i('releaseTime')
 
   const versionsStr = data.versions.map((it, i) => {
-    if (!showOldVersion && it.type !== 'release') return
+    if (!showOldVersion && it.type) return
     let type: string
     let typeName: string
     switch (it.type) {
@@ -57,8 +47,7 @@ const genList = () => {
         type = 'snapshot'
         typeName = snapshot
         break
-      case 'old_alpha':
-      case 'old_beta':
+      case 'old':
         type = 'snapshot'
         typeName = old
         break
@@ -71,26 +60,31 @@ const genList = () => {
       ${it.id} <span class="badge ${type}">${typeName}</span>
       ${it.fabric ? `<span class="badge fabric" onclick="install(event, ${i}, 1)">Fabric</span>` : ''}
       ${it.forge ? `<span class="badge forge" onclick="install(event, ${i}, 2)">Forge</span>` : ''}
+      ${it.optifine ? `<span class="badge optifine" onclick="install(event, ${i}, 3)">Optifine</span>` : ''}
       <p>${releaseTime}: ${date.getFullYear()}-${ft(date.getMonth() + 1)}-${ft(date.getDay())} ${ft(date.getHours())}:${ft(date.getHours())}</p>
     </li>`
   }).filter(Boolean).join('')
   $('#book-body').html(`<ul>
-    <li id="list-header">${$i('versionsTopText')} <span class="badge fabric">Fabric</span> <span class="badge forge">Forge</span></li>
+    <li id="list-header">${$i('versionsTopText')} <span class="badge fabric">Fabric</span> <span class="badge forge">Forge</span> <span class="badge optifine">Optifine</span></li>
     ${versionsStr}
   </ul>`)
 }
 
-(window as any).install = (e: MouseEvent, id: number, type: 0 | 1 | 2) => {
+(window as any).install = (e: MouseEvent, id: number, type: 0 | 1 | 2 | 3) => {
   const v = data.versions[id]
   let json: any = { type: 'Version', mcVersion: v.id, useIdAsName: true }
   switch (type) {
     case 1:
       json.id = v.fabric + '-Fabric'
-      json.$fabric = { version: v.fabric, loader: data.latest.fabricLoader }
+      json.$fabric = [v.fabric, data.latest.fabricLoader]
       break
     case 2:
-      json.id = v.id + '-' + v.forge.version + '-Forge'
+      json.id = v.id + '-Forge' + '-' + v.forge
       json.$forge = v.forge
+      break
+    case 3:
+      json.id = v.id + '-Optifine' + '-' + v.optifine[0] + '-' + v.optifine[0]
+      json.$optifine = v.optifine
       break
     default:
       json.id = v.id
@@ -103,7 +97,7 @@ const genList = () => {
   else e.cancelBubble = true
 }
 
-fetch('https://xmcl.blob.core.windows.net/integration/vanillaData.json', { cache: 'no-cache' })
+fetch('https://xmcl.blob.core.windows.net/pure-launcher/vanillaData.json')
   .then(it => it.json())
   .then((it: Data) => {
     data = it

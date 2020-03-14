@@ -74,5 +74,8 @@
   "multiInstances": "游戏多开",
   "multiInstancesDesc": "这个插件可以让你同时开启多个游戏实例",
   "authlibInjectorDesc": "这个插件可以让你使用Authlib-Injector来登陆游戏",
-  "mcBotDesc": "这个插件可以让你创建一个可以聊天、挂机和录制的机器人"
+  "mcBotDesc": "这个插件可以让你创建一个可以聊天、挂机和录制的机器人",
+  "curseForgeDesc": "这个插件可以让你一键安装 CurseForge 上的资源",
+  "skins": "皮肤插件",
+  "skinsDesc": "这个插件可以更换启动器的皮肤甚至是添加新的元素"
 }
