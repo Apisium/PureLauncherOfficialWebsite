@@ -72,7 +72,7 @@ const genList = () => {
 
 (window as any).install = (e: MouseEvent, id: number, type: 0 | 1 | 2 | 3) => {
   const v = data.versions[id]
-  let json: any = { type: 'Version', mcVersion: v.id, useIdAsName: true }
+  let json: any = { type: 'Version', mcVersion: v.id }
   switch (type) {
     case 1:
       json.id = v.fabric + '-Fabric'

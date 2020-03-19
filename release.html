@@ -34,17 +34,17 @@
       <section>
         <img src="assets/windows.png">
         <p>WINDOWS</p>
-        <p class="links"><a data-t="32">32位</a></p>
+        <p class="links"><a data-t="32" data-ext="exe" target="_blank"></a></p>
       </section>
       <section>
         <img src="assets/mac.png">
         <p>MACOS</p>
-        <p class="links"><span data-t="64"></span>: <a>dmg</a></p>
+        <p class="links"><span data-t="64"></span>: <a data-ext="dmg" target="_blank">dmg</a></p>
       </section>
       <section>
         <img src="assets/linux.png">
         <p>LINUX</p>
-        <p class="links"><span data-t="64"></span>: <a>rpm</a> <a>deb</a> <a>tar.gz</a></p>
+        <p class="links"><span data-t="64"></span>: <a target="_blank" data-ext="rpm">rpm</a> <a target="_blank" data-ext="deb">deb</a> <a target="_blank" data-ext="tar.gz">tar.gz</a></p>
       </section>
     </div>
     <div id="book-footer"></div>
@@ -57,11 +57,13 @@
         <a href="javascript:void setLanguague('en-us')">English</a>
       </span>
     </div>
+    <div><a href="http://www.beian.miit.gov.cn" target="_blank">辽ICP备16002088号-2</a></div>
     <span class="copy">Copyright &copy; 2020 Apisium All rights reserved.</span>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/native-promise-only@0.8.1/lib/npo.src.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="src/i18n.ts"></script>
+  <script src="src/release.ts"></script>
 </body>
 </html>
