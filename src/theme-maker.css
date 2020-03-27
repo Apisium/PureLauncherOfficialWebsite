@@ -1,0 +1,32 @@
+body {
+  background-image: url(../assets/bg-snow.png);
+}
+
+main {
+  margin: 140px;
+}
+
+#book-body {
+  padding: 20px 15%;
+}
+
+a {
+  color: #288123;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 140px 10px 60px;
+  }
+}
+
+#file {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

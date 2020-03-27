@@ -91,11 +91,6 @@ img {
     display: inline-block;
     text-align: left;
   }
-  .server {
-    display: block;
-    text-align: center;
-    img { height: 4rem }
-  }
 }
 
 #third {
@@ -105,6 +100,7 @@ img {
     url(../assets/trans-bottom-darkwool.png), url(../assets/bg-wool-white.png);
   background-position: center top, center bottom, top;
   background-repeat: repeat-x, repeat-x, repeat;
+  background-attachment: scroll, scroll, fixed;
   p { white-space: pre-wrap }
 }
 
@@ -130,7 +126,7 @@ a:not([role=button]) {
 @media screen and (max-width: 768px) {
   #first {
     text-align: center;
-    padding: 140px 20px;
+    padding: 110px 20px;
     display: block !important;
   }
 

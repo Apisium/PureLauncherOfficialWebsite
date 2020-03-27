@@ -8,11 +8,12 @@
   "allVersions": "ALL VERSIONS",
 
   "resourcesSystem": "Convenient Resource System",
-  "resourcesSystem1": "One click installation of  versiosn, mods, resource-packs and saves.",
+  "resourcesSystem1": "One click installation of versiosn, mods, resource-packs and saves.",
   "resourcesSystem2": "One click installation of vanilla games, Fabric, Forge and Optifine.",
   "resourcesSystem3": "One click add Minecraft third-party server.",
-  "resourcesSystem4": "Update the above resources automatically.",
-  "resourcesSystem5": "Easily export and manage the above resources.",
+  "resourcesSystem4": "One click installation of resources of CurseForge.",
+  "resourcesSystem5": "Update the above resources automatically.",
+  "resourcesSystem6": "Easily export and manage the above resources.",
   "openVersionsList": "View resources list",
 
   "accountSystem": "Advanced Account System",
@@ -47,9 +48,6 @@
   "telegramGroup": "Telegram Group",
   "clickToEnter": "Click to enter",
 
-  "serverProvider": "Server Provider",
-  "serverProviderText": "Smooth and stable | high frequency CPU | nvme SSD | free domain without port",
-
 
   "versionsTitle": "PureLauncher | Versions Download",
   "releaseVersion": "Release",
@@ -64,6 +62,8 @@
   "installSuccess": "Success! Please check the launcher!",
   "installFailed": "Failed! Please make sure you have installed PureLauncher!",
 
+  "protocolTitle": "PureLauncher | Protocol",
+  "protocolWrong": "Failed! Wrong protocol JSON! Please confirm the protocol is correct!",
 
   "releaseTitle": "PureLauncher | Downloads",
   "32": "x86",
@@ -73,6 +73,8 @@
   "pluginsTitle": "PureLauncher | Plugins",
   "multiInstances": "MultiInstances",
   "install": "INSTALL",
+  "themeMaker": "THEME MAKER",
+  "useThisTheme": "USE THIS THEME",
   "multiInstancesDesc": "This plugin allows you to run multiple game instances.",
   "authlibInjectorDesc": "This plugin allows you to use Authlib-Injector to login.",
   "mcBotDesc": "This plugin allows you to create a bot that can chat and record in game.",

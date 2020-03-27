@@ -11,8 +11,9 @@
   "resourcesSystem1": "一键安装整合包、模组、资源包和地图",
   "resourcesSystem2": "一键安装原版游戏、Fabric、Forge 和 Optifine",
   "resourcesSystem3": "一键添加第三方 Minecraft 服务器",
-  "resourcesSystem4": "自动更新以上资源",
-  "resourcesSystem5": "轻松导出和管理以上资源",
+  "resourcesSystem4": "一键安装 CurseForge 上的资源",
+  "resourcesSystem5": "自动更新以上资源",
+  "resourcesSystem6": "轻松导出和管理以上资源",
   "openVersionsList": "查看资源列表",
 
   "accountSystem": "高级的账户系统",
@@ -63,7 +64,6 @@
   "installSuccess": "操作成功! 请查看启动器!",
   "installFailed": "操作失败! 请确保已经安装 PureLauncher!",
 
-
   "releaseTitle": "PureLauncher | 下载",
   "32": "32位",
   "64": "64位",
@@ -71,6 +71,8 @@
 
   "pluginsTitle": "PureLauncher | 插件列表",
   "install": "立即安装",
+  "themeMaker": "制作主题",
+  "useThisTheme": "使用图中的主题",
   "multiInstances": "游戏多开",
   "multiInstancesDesc": "这个插件可以让你同时开启多个游戏实例",
   "authlibInjectorDesc": "这个插件可以让你使用Authlib-Injector来登陆游戏",

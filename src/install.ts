@@ -1,6 +1,4 @@
-import { ensureRunning, protocol, info } from 'pure-launcher/packages/web-api'
-
-info().then(console.log)
+import { ensureRunning, protocol } from 'pure-launcher/packages/web-api'
 
 let resource = decodeURIComponent(location.search.slice(1))
 try { resource = JSON.parse(resource) } catch { }
