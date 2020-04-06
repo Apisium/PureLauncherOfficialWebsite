@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><head>
+  <meta charset="UTF-8">
+  <meta name="description" content="PureLauncher 我的世界启动器">
+  <meta name="keywords" content="PureLauncher,purelauncher,Launcher,启动器,我的世界启动器,我的世界,Minecraft,MC">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="theme-color" content="#181818">
+  <title data-t="installLocalTitle">PureLauncher | Install Local Resource</title>
+  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- <link rel="icon" sizes="192x192" href="favicon.png"> -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#181818">
+  <meta name="apple-mobile-web-app-title" content="Unknown Domain">
+  <!-- <link rel="apple-touch-icon-precomposed" href="favicon.png"> -->
+  <!-- <meta name="msapplication-TileImage" content="favicon.png"> -->
+  <meta name="msapplication-TileColor" content="#181818">
+  <link type="text/css" rel="styleSheet" href="src/main.css" />
+  <link type="text/css" rel="styleSheet" href="src/install.css" />
+</head>
+</head>
+<body>
+  <main>
+    <div class="loading">
+      <div class='squares'><div></div><div></div><div></div><div></div></div>
+      <p data-t="loading" id="text"></p>
+    </div>
+    <div id="drag" style="display:none">
+      <img src="assets/screenshots/drag.png">
+      <p data-t="installLocalText"></p>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/native-promise-only@0.8.1/lib/npo.src.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="src/i18n.ts"></script>
+  <script src="src/install-local.ts"></script>
+</body>
+</html>

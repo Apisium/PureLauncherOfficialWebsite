@@ -39,6 +39,7 @@
   "advantages6": "Proxies can be used.",
   "advantages7": "Multiple download source support (such as BMCLAPI and MCBBSAPI)",
 
+  "documents": "DOCUMENTS",
   "openSource": "Open source, just to get better",
   "openSourceLink": "PureLauncher uses MIT license to\nhost the core, official website, official plugins and build process in GitHub completely\nto obtain the source code, please click the button below:",
   "hopeHelp": "we also welcome you to submit feedback and pull requests.\nYour help will make PureLauncher mature!",
@@ -80,5 +81,8 @@
   "mcBotDesc": "This plugin allows you to create a bot that can chat and record in game.",
   "curseForgeDesc": "This plugin allows you to install resources from CurseForge.",
   "skins": "Skins",
-  "skinsDesc": "This plugin allows you to change PureLauncher's skin."
+  "skinsDesc": "This plugin allows you to change PureLauncher's skin.",
+
+  "installLocalTitle": "PureLauncher | Install Local Resource",
+  "installLocalText": "Please drag the file into PureLauncher for installation"
 }

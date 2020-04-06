@@ -14,7 +14,7 @@
   "resourcesSystem4": "一键安装 CurseForge 上的资源",
   "resourcesSystem5": "自动更新以上资源",
   "resourcesSystem6": "轻松导出和管理以上资源",
-  "openVersionsList": "查看资源列表",
+  "openVersionsList": "查看 MineCraft 版本列表",
 
   "accountSystem": "高级的账户系统",
   "accountSystem1": "支持正版登陆和离线登陆",
@@ -39,6 +39,7 @@
   "advantages6": "可使用网络代理",
   "advantages7": "多下载源支持 (如 BMCLAPI 和 MCBBSAPI)",
 
+  "documents": "帮助文档",
   "openSource": "开源, 只是为了变得更好",
   "openSourceLink": "PureLauncher 使用自由的 MIT 协议\n将启动器本体、官网、官方插件和构建流程完整托管于 Github\n如需获取源码请点击下方按钮进入:",
   "hopeHelp": "同时我们也欢迎您提交反馈和代码\n您的帮助将会让 PureLauncher 走向成熟!",
@@ -79,5 +80,8 @@
   "mcBotDesc": "这个插件可以让你创建一个可以聊天、挂机和录制的机器人",
   "curseForgeDesc": "这个插件可以让你一键安装 CurseForge 上的资源",
   "skins": "皮肤插件",
-  "skinsDesc": "这个插件可以更换启动器的皮肤甚至是添加新的元素"
+  "skinsDesc": "这个插件可以更换启动器的皮肤甚至是添加新的元素",
+
+  "installLocalTitle": "PureLauncher | 安装本地资源",
+  "installLocalText": "请直接将文件拖拽入 PureLauncher 进行安装"
 }
