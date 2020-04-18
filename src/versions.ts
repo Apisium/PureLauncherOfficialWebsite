@@ -1,12 +1,12 @@
 import copy from 'copy-to-clipboard'
 
 interface Version {
-  id: string
-  time: number
-  fabric?: string
-  forge?: string
-  optifine?: [string, string]
-  type?: 'snapshot' | 'old'
+  i: string // id
+  t: number // time
+  a?: string // fabric
+  f?: string // forge
+  o?: [string, string] // optifine
+  k?: 1 | 2 // kind
 }
 
 interface Data {
@@ -38,16 +38,19 @@ const genList = () => {
   const old = $i('oldVersion')
   const releaseTime = $i('releaseTime')
 
-  const versionsStr = data.versions.map((it, i) => {
-    if (!showOldVersion && it.type) return
+  let versionsStr = ''
+  const len = data.versions.length
+  for (let i = 0; i < len; i++) {
+    const it = data.versions[i]
+    if (!showOldVersion && it.k) continue
     let type: string
     let typeName: string
-    switch (it.type) {
-      case 'snapshot':
+    switch (it.k) {
+      case 1:
         type = 'snapshot'
         typeName = snapshot
         break
-      case 'old':
+      case 2:
         type = 'snapshot'
         typeName = old
         break
@@ -55,15 +58,15 @@ const genList = () => {
         type = 'release'
         typeName = release
     }
-    const date = new Date(it.time)
-    return `<li onclick="install(event, ${i}, 0)">
-      ${it.id} <span class="badge ${type}">${typeName}</span>
-      ${it.fabric ? `<span class="badge fabric" onclick="install(event, ${i}, 1)">Fabric</span>` : ''}
-      ${it.forge ? `<span class="badge forge" onclick="install(event, ${i}, 2)">Forge</span>` : ''}
-      ${it.optifine ? `<span class="badge optifine" onclick="install(event, ${i}, 3)">Optifine</span>` : ''}
+    const date = new Date(it.t * 1000)
+    versionsStr += `<li onclick="install(event, ${i}, 0)">
+      ${it.i} <span class="badge ${type}">${typeName}</span>
+      ${it.a ? `<span class="badge fabric" onclick="install(event, ${i}, 1)">Fabric</span>` : ''}
+      ${it.f ? `<span class="badge forge" onclick="install(event, ${i}, 2)">Forge</span>` : ''}
+      ${it.o ? `<span class="badge optifine" onclick="install(event, ${i}, 3)">Optifine</span>` : ''}
       <p>${releaseTime}: ${date.getFullYear()}-${ft(date.getMonth() + 1)}-${ft(date.getDay())} ${ft(date.getHours())}:${ft(date.getHours())}</p>
     </li>`
-  }).filter(Boolean).join('')
+  }
   $('#book-body').html(`<ul>
     <li id="list-header">${$i('versionsTopText')} <span class="badge fabric">Fabric</span> <span class="badge forge">Forge</span> <span class="badge optifine">Optifine</span></li>
     ${versionsStr}
@@ -72,22 +75,22 @@ const genList = () => {
 
 (window as any).install = (e: MouseEvent, id: number, type: 0 | 1 | 2 | 3) => {
   const v = data.versions[id]
-  let json: any = { type: 'Version', mcVersion: v.id }
+  let json: any = { type: 'Version', mcVersion: v.i }
   switch (type) {
     case 1:
-      json.id = v.fabric + '-Fabric'
-      json.$fabric = [v.fabric, data.latest.fabricLoader]
+      json.id = v.a + '-Fabric'
+      json.$fabric = [v.a, data.latest.fabricLoader]
       break
     case 2:
-      json.id = v.id + '-Forge' + '-' + v.forge
-      json.$forge = v.forge
+      json.id = v.i + '-Forge' + '-' + v.f
+      json.$forge = v.f
       break
     case 3:
-      json.id = v.id + '-Optifine' + '-' + v.optifine[0] + '-' + v.optifine[0]
-      json.$optifine = v.optifine
+      json.id = v.i + '-Optifine' + '-' + v.o[0] + '-' + v.o[0]
+      json.$optifine = v.o
       break
     default:
-      json.id = v.id
+      json.id = v.i
       json.$vanilla = true
   }
   json = JSON.stringify(json)
@@ -97,7 +100,7 @@ const genList = () => {
   else e.cancelBubble = true
 }
 
-fetch('https://xmcl.blob.core.windows.net/pure-launcher/vanillaData.json')
+fetch('https://s.pl.apisium.cn/minecraft.json')
   .then(it => it.json())
   .then((it: Data) => {
     data = it

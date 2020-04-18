@@ -1,6 +1,7 @@
 const data: { os: { name?: string }, cpu: { architecture?: string } } = new (window as any).UAParser().getResult()
 
 const os = (data.os.name || '').toLowerCase()
+const isX64 = (data.cpu.architecture || '').indexOf('64') !== -1
 
 const cn = {
   home: require('../assets/screenshots/home-cn.png'),
@@ -17,19 +18,19 @@ const en = {
 const changeText = () => {
   let text: string
   let ext: string
-  if (os.startsWith('android') || os.startsWith('blackberry') || os.startsWith('ios') || os.startsWith('windows phone')) {
+  if (os === 'android' || os === 'blackberry' || os === 'ios' || os === 'windows phone') {
     text = $i('notSupport')
     $('#download-now').prop('disabled', true)
-  } else if (os.startsWith('windows')) {
-    text = `Windows ${$i('32')}`
+  } else if (os === 'windows') {
+    text = `Windows ${$i(isX64 ? '64' : '32')}`
     ext = 'exe'
-  } else if (os.startsWith('mac os')) {
+  } else if (os === 'mac os') {
     text = `MACOS ${$i('64')}`
     ext = 'dmg'
-  } else if (os.startsWith('debian') || os.startsWith('ubuntu') || os.startsWith('deepin')) {
+  } else if (os === 'debian' || os === 'ubuntu' || os === 'deepin') {
     text = `Debian Linux ${$i('64')}`
     ext = 'deb'
-  } else if (os.startsWith('redhat') || os.startsWith('suse') || os.startsWith('centos')) {
+  } else if (os === 'redhat' || os === 'suse' || os === 'centos') {
     text = `RedHat Linux ${$i('64')}`
     ext = 'rpm'
   } else {
@@ -40,7 +41,9 @@ const changeText = () => {
   if (ext) {
     $('#release-type').text(text + ` (${ext})`)
     btn.onclick = () => void window.open(
-      `https://xmcl.azurewebsites.net/api/pl-get-release?ext=${ext}&gfw=${(window as any).currentLang === 'zh-cn'}`,
+      (window as any).currentLang === 'zh-cn'
+        ? 'https://dl.pl.apisium.cn/pl/PureLauncher.' + ext
+        : 'https://github.com/Apisium/PureLauncher/releases/latest/download/PureLauncher.' + ext,
       '_blank'
     )
   } else {
