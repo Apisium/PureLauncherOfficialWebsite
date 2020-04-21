@@ -37,19 +37,10 @@ const changeText = () => {
     text = `Linux ${$i('64')}`
     ext = 'tar.gz'
   }
-  const btn = document.getElementById('download-now')
   if (ext) {
     $('#release-type').text(text + ` (${ext})`)
-    btn.onclick = () => void window.open(
-      (window as any).currentLang === 'zh-cn'
-        ? 'https://dl.pl.apisium.cn/pl/PureLauncher.' + ext
-        : 'https://github.com/Apisium/PureLauncher/releases/latest/download/PureLauncher.' + ext,
-      '_blank'
-    )
-  } else {
-    $('#release-type').text(text)
-    btn.onclick = () => {}
-  }
+    $('#download-now').prop('href', 'https://dl.pl.apisium.cn/PureLauncher.' + ext)
+  } else $('#release-type').text(text)
 }
 const fn = (window as any).setLanguague
 const f = (window as any).setLanguague = (str: string, exec: boolean) => {

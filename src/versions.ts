@@ -25,11 +25,12 @@ $('#old-versions').click(function () {
   showOldVersion = $(this).prop('checked')
   genList()
 })
-$('#copy-mode').click(function () {
-  copyMode = $(this).prop('checked')
-})
+$('#copy-mode').click(function () { copyMode = $(this).prop('checked') })
 
-const ft = (t: number) => t.toString().padStart(2, '0')
+const ft = (t: number) => {
+  const ret = t.toString()
+  return ret.length < 2 ? '0' + ret : ret
+}
 
 let data: Data
 const genList = () => {
